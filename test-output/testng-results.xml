@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21343" started-at="2023-09-27T02:44:43 IST" finished-at="2023-09-27T02:45:04 IST">
+  <suite name="Default suite" duration-ms="22365" started-at="2023-09-27T10:22:30 IST" finished-at="2023-09-27T10:22:52 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21343" started-at="2023-09-27T02:44:43 IST" finished-at="2023-09-27T02:45:04 IST">
+    <test name="Default test" duration-ms="22365" started-at="2023-09-27T10:22:30 IST" finished-at="2023-09-27T10:22:52 IST">
       <class name="com.alohaTechnology.test.ScrappedDataTest">
-        <test-method status="FAIL" signature="webdriverInit()[pri:0, instance:com.alohaTechnology.test.ScrappedDataTest@173f6d9]" name="webdriverInit" is-config="true" duration-ms="21257" started-at="2023-09-27T02:44:43 IST" finished-at="2023-09-27T02:45:04 IST">
+        <test-method status="FAIL" signature="webdriverInit()[pri:0, instance:com.alohaTechnology.test.ScrappedDataTest@173f6d9]" name="webdriverInit" is-config="true" duration-ms="22179" started-at="2023-09-27T10:22:30 IST" finished-at="2023-09-27T10:22:52 IST">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Timed out waiting for driver server to start.
@@ -54,7 +54,7 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:21586/status] to be available after 20005 ms
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:34368/status] to be available after 20002 ms
 at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
 at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
 ... 33 more
@@ -69,11 +69,7 @@ at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webdriverInit -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.alohaTechnology.test.ScrappedDataTest@173f6d9]" name="tearDown" is-config="true" duration-ms="-1695762904496" started-at="2023-09-27T02:45:04 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="writeCSVScrappedData()[pri:0, instance:com.alohaTechnology.test.ScrappedDataTest@173f6d9]" name="writeCSVScrappedData" duration-ms="0" started-at="2023-09-27T02:45:04 IST" finished-at="2023-09-27T02:45:04 IST">
+        <test-method status="SKIP" signature="writeCSVScrappedData()[pri:0, instance:com.alohaTechnology.test.ScrappedDataTest@173f6d9]" name="writeCSVScrappedData" duration-ms="0" started-at="2023-09-27T10:22:52 IST" finished-at="2023-09-27T10:22:52 IST">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Timed out waiting for driver server to start.
@@ -120,7 +116,7 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:21586/status] to be available after 20005 ms
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:34368/status] to be available after 20002 ms
 at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
 at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
 ... 33 more
@@ -135,6 +131,10 @@ at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeCSVScrappedData -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.alohaTechnology.test.ScrappedDataTest@173f6d9]" name="tearDown" is-config="true" duration-ms="-1695790372659" started-at="2023-09-27T10:22:52 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.alohaTechnology.test.ScrappedDataTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
