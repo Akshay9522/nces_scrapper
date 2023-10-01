@@ -43,6 +43,7 @@ public class Utility extends Base{
 	}
 	public static void switchTochildWindow() {
 		Set <String> windowhdl = driver.getWindowHandles();
+		System.out.println(windowhdl.size());
 		Iterator iterator = windowhdl.iterator();
 		String homeWndw = (String) iterator.next();
 		String chldWndw = (String) iterator.next();

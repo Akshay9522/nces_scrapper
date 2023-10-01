@@ -18,6 +18,9 @@ public WebDriver driver;
 @FindBy (name="State")
 WebElement state;
 
+@FindBy  (xpath="//input[@name='City']")
+WebElement city;
+
 @FindBy (linkText="Browse")
 WebElement Browse;
 
@@ -50,12 +53,9 @@ List<WebElement> grade;
    }
   public void enterData() throws Throwable {
 	  Utility.selectByText(state, Utility.loadProperties().getProperty("state"));
-	  Utility.click(Browse);
-	  Utility.switchTochildWindow();
-	  Utility.click(Abbeville);
+	  Utility.enterText(city, Utility.loadProperties().getProperty("city"));
   }
   public void search() {
-	  Utility.switchTochildWindow();
 	  Utility.click(search);
   }
  public void extractData() {

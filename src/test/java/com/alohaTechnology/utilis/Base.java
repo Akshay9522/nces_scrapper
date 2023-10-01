@@ -28,6 +28,7 @@ public class Base {
 	
 	public static void openApplication() throws Throwable {
 		driver.get(loadProperties().getProperty("url"));
+		driver.manage().window().maximize();
 	}
 	
 	public static Properties loadProperties() throws Throwable {

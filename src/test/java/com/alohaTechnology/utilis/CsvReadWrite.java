@@ -26,7 +26,7 @@ public class CsvReadWrite {
 			CSVWriter writer = new CSVWriter(output);
 			String[] header = { "schoolName", "adress", "phoneNumber", "country", "student", "grade" };
 	        writer.writeNext(header);
-			for(int a=0; a<=i;a++) {
+			for(int a=0; a<i;a++) {
 				 schoolName=Utility.scrapDataName.get(a);
 				 adress=Utility.scrapDataAdress.get(a);
 				 phoneNumber=Utility.scrapDataPhoneNumber.get(a);
