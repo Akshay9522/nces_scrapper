@@ -1,4 +1,4 @@
-package com.alohaTechnology.utilis;
+package com.utilis;
 
 import java.io.File;
 import java.io.FileReader;
@@ -7,6 +7,9 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -37,6 +40,13 @@ public class Base {
 		pro = new Properties();
 		pro.load(fr);
 		return pro;		
+	}
+	public void captureScreen( String tcname) throws IOException {
+
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File sourse= ts.getScreenshotAs(OutputType.FILE);
+		File target = new File (System.getProperty("user.dir")  +  "\\Screenshots\\" +tcname + ".png" );
+		FileUtils.copyFile(sourse, target);
 	}
     
 	@AfterTest

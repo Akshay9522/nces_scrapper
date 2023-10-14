@@ -1,4 +1,4 @@
-package com.alohaTechnology.utilis;
+package com.utilis;
 
 import java.io.File;
 import java.io.FileWriter;

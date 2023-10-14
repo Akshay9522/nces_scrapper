@@ -1,4 +1,4 @@
-package com.alohaTechnology.page;
+package com.page;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
-import com.alohaTechnology.utilis.Utility;
+import com.utilis.Utility;
 
 public class NcesSearch {
 	

@@ -1,4 +1,4 @@
-package com.alohaTechnology.utilis;
+package com.utilis;
 
 import java.util.ArrayList;
 import java.util.Iterator;

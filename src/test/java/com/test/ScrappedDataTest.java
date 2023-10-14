@@ -1,10 +1,10 @@
-package com.alohaTechnology.test;
+package com.test;
 
 import org.testng.annotations.Test;
 
-import com.alohaTechnology.page.NcesSearch;
-import com.alohaTechnology.utilis.CsvReadWrite;
-import com.alohaTechnology.utilis.Utility;
+import com.page.NcesSearch;
+import com.utilis.CsvReadWrite;
+import com.utilis.Utility;
 
 public class ScrappedDataTest extends Utility {
 
